@@ -1,0 +1,52 @@
+[
+  {
+    "label": "Grau I: normal",
+    "input": {
+      "grau": "1"
+    },
+    "expected": {
+      "raw": {
+        "grau": 1
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "grau": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Grau III: fecha o olho com esforço",
+    "input": {
+      "grau": "3"
+    },
+    "expected": {
+      "raw": {
+        "grau": 3
+      },
+      "level": "mid",
+      "verdict": "moderada"
+    },
+    "originalInput": {
+      "grau": "3"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Grau VI: paralisia total",
+    "input": {
+      "grau": "6"
+    },
+    "expected": {
+      "raw": {
+        "grau": 6
+      },
+      "level": "high",
+      "verdict": "paralisia total"
+    },
+    "originalInput": {
+      "grau": "6"
+    },
+    "expandedZeroOptions": []
+  }
+]

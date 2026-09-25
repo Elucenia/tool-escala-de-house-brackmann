@@ -1,0 +1,157 @@
+{
+  "tool": {
+    "id": "escala-de-house-brackmann",
+    "title": "Escala de House-Brackmann",
+    "short": "Grau de disfunção do nervo facial",
+    "desc": "Escala de House-Brackmann para paralisia facial periférica: descrição dos graus I a VI, do normal à paralisia total, para registro e seguimento.",
+    "lead": "Padroniza o registro da função do nervo facial em seis graus, da função normal (I) à paralisia total (VI), usada na paralisia de Bell, no pós-operatório e no trauma.",
+    "spec": [
+      "otorrinolaringologia",
+      "cirurgia-de-cabeca-e-pescoco",
+      "neurologia",
+      "cirurgia-plastica",
+      "neurocirurgia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "grau",
+        "Achado clínico",
+        "sel",
+        {
+          "opts": {
+            "1": "I · Função normal",
+            "2": "II · Fraqueza leve só à inspeção cuidadosa; fecha o olho com mínimo esforço",
+            "3": "III · Assimetria óbvia não desfigurante; fecha o olho com esforço; sincinesia perceptível",
+            "4": "IV · Fraqueza óbvia ou assimetria desfigurante; não fecha o olho; fronte sem movimento",
+            "5": "V · Movimento apenas perceptível; assimetria em repouso",
+            "6": "VI · Nenhum movimento"
+          }
+        }
+      ]
+    ],
+    "formula": "<p>Graduação clínica global da função facial, observando repouso, fronte, fechamento ocular, boca e sequelas (sincinesia, contratura, espasmo). O fechamento ocular completo separa o grau III (fecha com esforço) do grau IV (fechamento incompleto).</p>",
+    "table": [
+      [
+        "Grau",
+        "Disfunção",
+        "Achado-chave"
+      ],
+      [
+        "I",
+        "Normal",
+        "Função normal em todas as áreas"
+      ],
+      [
+        "II",
+        "Leve",
+        "Fraqueza discreta; simetria em repouso"
+      ],
+      [
+        "III",
+        "Moderada",
+        "Diferença óbvia; fecha o olho com esforço"
+      ],
+      [
+        "IV",
+        "Moderadamente grave",
+        "Fechamento ocular incompleto; fronte parada"
+      ],
+      [
+        "V",
+        "Grave",
+        "Movimento mínimo; assimetria em repouso"
+      ],
+      [
+        "VI",
+        "Paralisia total",
+        "Nenhum movimento"
+      ]
+    ],
+    "tips": [
+      "Na paralisia periférica, a <strong>fronte</strong> também é acometida; se a fronte se movimenta bem, pense em lesão central (AVC).",
+      "Na paralisia de Bell, corticoide nas primeiras 72 horas melhora a recuperação; nos graus V e VI, discuta associar antiviral.",
+      "Graus IV a VI: proteja a córnea (colírio lubrificante, pomada e oclusão noturna) e encaminhe ao oftalmologista se houver dor ou olho vermelho.",
+      "A escala é global e pouco sensível a diferenças regionais; para pesquisa e reabilitação, a escala de Sunnybrook é mais detalhada.",
+      "Paralisia sem melhora em 3 a 4 meses, recorrente ou progressiva pede imagem para excluir tumor."
+    ],
+    "sources": [
+      [
+        "House JW, Brackmann DE. Facial nerve grading system. Otolaryngol Head Neck Surg, 1985.",
+        "https://doi.org/10.1177/019459988509300202"
+      ]
+    ],
+    "cases": [
+      [
+        "Grau I: normal",
+        {
+          "grau": "1"
+        },
+        {
+          "raw": {
+            "grau": 1
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Grau III: fecha o olho com esforço",
+        {
+          "grau": "3"
+        },
+        {
+          "raw": {
+            "grau": 3
+          },
+          "level": "mid",
+          "verdict": "moderada"
+        }
+      ],
+      [
+        "Grau VI: paralisia total",
+        {
+          "grau": "6"
+        },
+        {
+          "raw": {
+            "grau": 6
+          },
+          "level": "high",
+          "verdict": "paralisia total"
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}
