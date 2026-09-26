@@ -1,11 +1,11 @@
-/* tool-escala-de-house-brackmann · Elucenia · https://github.com/Elucenia/tool-escala-de-house-brackmann
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-escala-de-house-brackmann · ELUCENIA · https://github.com/Elucenia/tool-escala-de-house-brackmann
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escala-de-house-brackmann","title":"Escala de House-Brackmann","fields":[["grau","Achado clínico","sel",{"opts":{"1":"I · Função normal","2":"II · Fraqueza leve só à inspeção cuidadosa; fecha o olho com mínimo esforço","3":"III · Assimetria óbvia não desfigurante; fecha o olho com esforço; sincinesia perceptível","4":"IV · Fraqueza óbvia ou assimetria desfigurante; não fecha o olho; fronte sem movimento","5":"V · Movimento apenas perceptível; assimetria em repouso","6":"VI · Nenhum movimento"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
